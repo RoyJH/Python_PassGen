@@ -13,9 +13,7 @@ chars += nr_symbols
 nr_numbers = int(input(f"How many numbers would you like?\n"))
 chars += nr_numbers
 
-#print(chars)
-#Eazy Level - Order not randomised:
-#e.g. 4 letter, 2 symbol, 2 number = JduE&!91
+#Hard Verions: Generates in a random order. Loop continues until conditions have been met.
 
 pword = []
 while (nr_letters > 0 or nr_symbols > 0 or nr_numbers > 0):
@@ -43,5 +41,3 @@ while (nr_letters > 0 or nr_symbols > 0 or nr_numbers > 0):
 if chars == 0:
   print("Your password is: ")
   print(''.join(pword))
-#Hard Level - Order of characters randomised:
-#e.g. 4 letter, 2 symbol, 2 number = g^2jk8&P
